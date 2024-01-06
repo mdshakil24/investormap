@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 body{
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 html {
   overflow-x: hidden !important;
@@ -26,3 +28,151 @@ ul,li{
   padding:0;
   list-style: none;
 }
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #575A7B;
+  text-transform: inherit;
+  line-height: normal;
+}
+
+/* share similar style */
+
+.similar-btn a {
+  background: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  text-transform: capitalize;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 15px 15px;
+}
+.similar-btn a svg {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+.similar-btn.black-bg-color a {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.similar-btn.more-bg-color a {
+  background-color: rgba(0, 0, 0, 0.10);
+}
+
+
+/* Start IM Sidebar Area Css  */
+.im-sidebar-area {
+  background-color: #FFFFFF;
+  position: absolute;
+  width: 260px;
+  height: 100%;
+  border-right: 1px dashed #E6EAED;
+  padding: 0 0 180px;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.im-logo-content {
+  padding: 40px 15px;
+  text-align: center;
+}
+.im-logo-content img {
+  width: 170px;
+  height: auto;
+}
+.im-sidebar-content {
+  padding: 0 15px;
+}
+.im-sidebar-content ul > li a,.im-aside-logout a {
+  font-weight: 500;
+  font-size: 17px;
+  color: #575A7B;
+  text-transform: capitalize;
+  line-height: normal;
+  padding: 14px 15px;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  transition: .1s;
+}
+.im-sidebar-content ul > li a::before {
+  content: '';
+  position: absolute;
+  background-color: #000000;
+  width: 0px;
+  height: 100%;
+  top: 0;
+  left: -15px;
+  border-radius: 0px 10px 10px 0px;
+  transition: .1s;
+}
+.im-sidebar-content ul > li a:hover::before,.im-sidebar-content ul > li a.active::before {
+  width: 5px;
+}
+.im-sidebar-content ul > li a:hover,.im-sidebar-content ul > li a.active,.im-aside-logout a:hover {
+  background-color: #F2F2F2;
+}
+.im-sidebar-content ul > li a svg,.im-aside-logout svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+.im-aside-footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+}
+.im-profile-content {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E6EAED;
+  padding: 15px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 25px 25px;
+}
+.im-profile-content img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.im-profile-content p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #101136;
+  text-transform: capitalize;
+  line-height: normal;
+  display: block;
+}
+.im-profile-content a {
+  font-weight: 400;
+  font-size: 12px;
+  color: #575A7B;
+  text-transform: inherit;
+  display: block;
+  width: 100%;
+}
+.im-aside-logout {
+ position: relative;
+}
+.im-aside-logout a {
+  border-top: 1px solid #E6EAED;
+  padding: 25px 35px;
+  border-radius: 0;
+}
+
+/* End IM Sidebar Area Css  */
+
+/* Start IM Main Area Css  */
+
+.im-main-area {
+  background-color: #FFFFFF;
+  margin-left: 260px;
+  padding: 30px 0;
+}
+
+/* End IM Main Area Css  */
