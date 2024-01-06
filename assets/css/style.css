@@ -66,7 +66,7 @@ p {
   background-color: #000000;
   color: #FFFFFF;
 }
-.similar-btn.more-bg-color a {
+.more-bg-color a {
   background-color: rgba(0, 0, 0, 0.10);
 }
 select {
@@ -219,6 +219,8 @@ header.im-header-area {
   color: #101136;
   text-transform: capitalize;
   line-height: normal;
+  display: flex;
+  align-items: center;
 }
 .im-header-left-page-link a svg {
   width: 18px;
@@ -569,6 +571,58 @@ header.im-header-area {
 }
 .im-feedback-integration-content a svg {
   margin-right: 10px;
+}
+/* End Integration Page Css */
+
+
+/* Start Integration Page Css */
+.im-ad-accounts-area {
+  padding: 25px 30px;
+}
+.im-ad-accounts-content {
+  max-width: 620px;
+  width: 100%;
+}
+.im-ad-accounts-button-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.im-ad-accounts-button-content a {
+  margin-left: 0;
+  margin-right: 20px;
+  border: 1px solid transparent;
+  padding: 14px 50px;
+}
+.more-bg-color a:hover {
+  background: #1877F2;
+}
+.im-ad-accounts-select-dropdown {
+  position: relative;
+}
+.im-ad-accounts-select-dropdown select {
+  font-weight: 500;
+  font-size: 15px;
+  color: #101136;
+  text-transform: capitalize;
+  width: 100%;
+  border: 1px solid rgba(145, 158, 171, 0.32);
+  border-radius: 8px;
+  padding: 14px 40px;
+  margin: 30px 0;
+  cursor: pointer;
+}
+.im-ad-accounts-select-dropdown svg.facebook {
+  position: absolute;
+  top: 49px;
+  left: 15px;
+  pointer-events: none;
+}
+.im-ad-accounts-select-dropdown svg.downarrow {
+  position: absolute;
+  top: 52px;
+  right: 15px;
+  pointer-events: none;
 }
 
 
