@@ -80,17 +80,15 @@ main.full-wrapper-area {
 /* Start IM Sidebar Area Css  */
 .im-sidebar-area {
   background-color: #FFFFFF;
-  /* position: absolute; */
-  /* width: 260px; */
-  /* height: 100%; */
+  position: absolute;
+  width: 260px;
+  height: 100%;
   border-right: 1px dashed #E6EAED;
   padding: 0 0 180px;
   top: 0;
   left: 0;
   z-index: 9;
   flex: 0 0 14%;
-  width: 260px;
-  position: relative;
   /* height: 100vh; */
 }
 .im-logo-content {
@@ -183,15 +181,18 @@ main.full-wrapper-area {
   padding: 25px 35px;
   border-radius: 0;
 }
+.im-aside-logout.admin-dashboard a  {
+  border-top: none;
+}
 
 /* End IM Sidebar Area Css  */
 
 /* Start IM Main Area Css  */
-
 .im-main-area {
   background-color: #FFFFFF;
   flex: 0 0 86%;
   width: 100%;
+  margin-left: 260px;
 }
 
 /* header css */
@@ -363,11 +364,9 @@ header.im-header-area {
   padding: 15px 30px;
   background: #FAFAFA;
 }
-.im-audiences-details-content-header-text p {
-  font-size: 14px;
+.im-audiences-details-content-heading p {
   color: #575A7B;
   text-transform: uppercase;
-  line-height: normal;
 }
 .im-audiences-list-header-audience {
   flex: 0 0 30%
@@ -498,6 +497,28 @@ header.im-header-area {
 .im-pagination-right-content ul li:last-child a {
   margin-left: 10px;
 }
-
+/* admin deshboard page css */
+.im-audiences-list-header-audiencename,.im-single-audiences-content.adname {
+  flex: 0 0 40%
+}
+.im-audiences-list-header-datecreated,.im-single-audiences-content.addate {
+  flex: 0 0 20%
+}
+.im-audiences-list-header-adsize,.im-single-audiences-content.adsize {
+  flex: 0 0 30%
+}
+.im-audiences-list-header-adactions,.im-single-audiences-content.adaction { 
+  flex: 0 0 10%
+}
+.im-single-audiences-content.adaction {
+  display: flex;
+  align-items: center;
+}
+.im-single-audiences-content.adaction a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
 /* End IM Main Area Css  */

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>investormap Admin Dashboard</title>
+        <!--====== REQUIRED META TAG ======-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+        <meta name="author" content="investormap" />
+        <meta name="description" content="HTML Website" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <!-- link shortcut icon -->
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.png" />
+        <!--====== LINK CSS FILES ======-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    </head>
+    <body>
+        <main class="full-wrapper-area">
+            <!-- Start IM Sidebar Area -->
+            <aside class="im-sidebar-area">
+                <div class="im-logo-content">
+                    <a href="#"><img src="assets/images/logo/logo.png" alt="InvertorMap Logo" /></a>
+                </div>
+                <nav class="im-sidebar-content">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10.9999 1.5H13.2865C14.2326 1.5 15 2.27413 15 3.22913V5.53487C15 6.48915 14.2326 7.264 13.2865 7.264H10.9999C10.0531 7.264 9.28564 6.48915 9.28564 5.53487V3.22913C9.28564 2.27413 10.0531 1.5 10.9999 1.5Z"
+                                        stroke="#101136"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M2.71424 1.5H5.00014C5.94692 1.5 6.71439 2.27413 6.71439 3.22913V5.53487C6.71439 6.48915 5.94692 7.264 5.00014 7.264H2.71424C1.76747 7.264 1 6.48915 1 5.53487V3.22913C1 2.27413 1.76747 1.5 2.71424 1.5Z"
+                                        stroke="#101136"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M2.71424 9.73599H5.00014C5.94692 9.73599 6.71439 10.5101 6.71439 11.4658V13.7709C6.71439 14.7259 5.94692 15.5 5.00014 15.5H2.71424C1.76747 15.5 1 14.7259 1 13.7709V11.4658C1 10.5101 1.76747 9.73599 2.71424 9.73599Z"
+                                        stroke="#101136"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10.9999 9.73599H13.2865C14.2326 9.73599 15 10.5101 15 11.4658V13.7709C15 14.7259 14.2326 15.5 13.2865 15.5H10.9999C10.0531 15.5 9.28564 14.7259 9.28564 13.7709V11.4658C9.28564 10.5101 10.0531 9.73599 10.9999 9.73599Z"
+                                        stroke="#101136"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                    <path d="M13.4996 5.87C13.4546 5.8625 13.4021 5.8625 13.3571 5.87C12.3221 5.8325 11.4971 4.985 11.4971 3.935C11.4971 2.8625 12.3596 2 13.4321 2C14.5046 2 15.3671 2.87 15.3671 3.935C15.3596 4.985 14.5346 5.8325 13.4996 5.87Z" stroke="#575A7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7284 11.33C13.7559 11.5025 14.8884 11.3225 15.6834 10.79C16.7409 10.085 16.7409 8.93003 15.6834 8.22503C14.8809 7.69253 13.7334 7.51253 12.7059 7.69253" stroke="#575A7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.4773 5.87C4.5223 5.8625 4.5748 5.8625 4.6198 5.87C5.6548 5.8325 6.4798 4.985 6.4798 3.935C6.4798 2.8625 5.6173 2 4.5448 2C3.4723 2 2.6098 2.87 2.6098 3.935C2.6173 4.985 3.4423 5.8325 4.4773 5.87Z" stroke="#575A7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.24996 11.33C4.22246 11.5025 3.08996 11.3225 2.29496 10.79C1.23746 10.085 1.23746 8.93003 2.29496 8.22503C3.09746 7.69253 4.24495 7.51253 5.27245 7.69253" stroke="#575A7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.99981 11.4725C8.95481 11.465 8.90231 11.465 8.85731 11.4725C7.82231 11.435 6.99731 10.5875 6.99731 9.53751C6.99731 8.46501 7.85981 7.60251 8.93231 7.60251C10.0048 7.60251 10.8673 8.47251 10.8673 9.53751C10.8598 10.5875 10.0348 11.4425 8.99981 11.4725Z" stroke="#575A7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.81693 13.835C5.75943 14.54 5.75943 15.695 6.81693 16.4C8.01693 17.2025 9.98193 17.2025 11.1819 16.4C12.2394 15.695 12.2394 14.54 11.1819 13.835C9.98943 13.04 8.01693 13.04 6.81693 13.835Z" stroke="#575A7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                  Users
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+
+                <div class="im-aside-footer">
+
+
+                    <div class="im-aside-logout admin-dashboard">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path
+                                    d="M10.0041 5.09367V4.40755C10.0041 2.91103 8.79073 1.69763 7.29421 1.69763H3.70918C2.21339 1.69763 1 2.91103 1 4.40755V12.5924C1 14.089 2.21339 15.3024 3.70918 15.3024H7.30156C8.79367 15.3024 10.0041 14.0926 10.0041 12.6005V11.9071"
+                                    stroke="#575A7B"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path d="M14.9999 8.49993H6.14502" stroke="#575A7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.8467 6.35617L14.9999 8.49983L12.8467 10.6442" stroke="#575A7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <!-- End IM Sidebar Area -->
+
+            <!-- Start IM Main Area  -->
+            <div class="im-main-area">
+                <!-- header area  -->
+                <header class="im-header-area">
+                    <div class="im-header-content">
+                        <div class="im-header-left-content">
+                            <div class="im-header-left-page-link">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M13.8569 1.5H16.7968C18.0132 1.5 18.9999 2.49531 18.9999 3.72316V6.68769C18.9999 7.91462 18.0132 8.91086 16.7968 8.91086H13.8569C12.6396 8.91086 11.6528 7.91462 11.6528 6.68769V3.72316C11.6528 2.49531 12.6396 1.5 13.8569 1.5Z"
+                                            fill="#101136"
+                                            stroke="#101136"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M3.20403 1.5H6.14304C7.36033 1.5 8.34707 2.49531 8.34707 3.72316V6.68769C8.34707 7.91462 7.36033 8.91086 6.14304 8.91086H3.20403C1.98674 8.91086 1 7.91462 1 6.68769V3.72316C1 2.49531 1.98674 1.5 3.20403 1.5Z"
+                                            fill="#101136"
+                                            stroke="#101136"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M3.20403 12.0891H6.14304C7.36033 12.0891 8.34707 13.0844 8.34707 14.3132V17.2768C8.34707 18.5047 7.36033 19.5 6.14304 19.5H3.20403C1.98674 19.5 1 18.5047 1 17.2768V14.3132C1 13.0844 1.98674 12.0891 3.20403 12.0891Z"
+                                            fill="#101136"
+                                            stroke="#101136"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M13.8569 12.0891H16.7968C18.0132 12.0891 18.9999 13.0844 18.9999 14.3132V17.2768C18.9999 18.5047 18.0132 19.5 16.7968 19.5H13.8569C12.6396 19.5 11.6528 18.5047 11.6528 17.2768V14.3132C11.6528 13.0844 12.6396 12.0891 13.8569 12.0891Z"
+                                            fill="#101136"
+                                            stroke="#101136"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    Dashboard
+                                </a>
+                            </div>
+                        </div>
+                        <div class="im-header-right-content">
+                            <div class="im-header-right-btn-link similar-btn black-bg-color">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <path
+                                            d="M7.5 7.5C9.22589 7.5 10.625 6.10089 10.625 4.375C10.625 2.64911 9.22589 1.25 7.5 1.25C5.77411 1.25 4.375 2.64911 4.375 4.375C4.375 6.10089 5.77411 7.5 7.5 7.5Z"
+                                            stroke="white"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path d="M2.1311 13.75C2.1311 11.3313 4.53735 9.375 7.49985 9.375C8.09985 9.375 8.68111 9.45625 9.22486 9.60625" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M13.75 11.25C13.75 11.45 13.725 11.6437 13.675 11.8312C13.6188 12.0812 13.5188 12.325 13.3875 12.5375C12.9563 13.2625 12.1625 13.75 11.25 13.75C10.6063 13.75 10.025 13.5062 9.5875 13.1062C9.4 12.9437 9.23749 12.75 9.11249 12.5375C8.88124 12.1625 8.75 11.7188 8.75 11.25C8.75 10.575 9.01875 9.95626 9.45625 9.50626C9.9125 9.03751 10.55 8.75 11.25 8.75C11.9875 8.75 12.6563 9.06876 13.1063 9.58126C13.5063 10.025 13.75 10.6125 13.75 11.25Z"
+                                            stroke="white"
+                                            stroke-miterlimit="10"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path d="M12.1813 11.2375H10.3188" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.25 10.325V12.1938" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Add Audience
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- header area  -->
+
+                <!-- audiences area  -->
+                <div class="im-audiences-area">
+                    <div class="im-audiences-content admin-dashboard">
+                        <!-- audiences head -->
+                        <div class="im-audiences-head">
+                            <div class="im-audiences-left-head">
+                                <div class="im-audences-left-head-content">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                            <path
+                                                d="M7.63314 9.55832C7.5498 9.54999 7.4498 9.54999 7.35814 9.55832C5.3748 9.49166 3.7998 7.86666 3.7998 5.86666C3.7998 3.82499 5.4498 2.16666 7.4998 2.16666C9.54147 2.16666 11.1998 3.82499 11.1998 5.86666C11.1915 7.86666 9.61647 9.49166 7.63314 9.55832Z"
+                                                stroke="#101136"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M13.6752 3.83334C15.2919 3.83334 16.5919 5.14168 16.5919 6.75001C16.5919 8.32501 15.3419 9.60834 13.7836 9.66668C13.7169 9.65834 13.6419 9.65834 13.5669 9.66668"
+                                                stroke="#101136"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M3.4666 12.6333C1.44993 13.9833 1.44993 16.1833 3.4666 17.525C5.75827 19.0583 9.5166 19.0583 11.8083 17.525C13.8249 16.175 13.8249 13.975 11.8083 12.6333C9.52493 11.1083 5.7666 11.1083 3.4666 12.6333Z"
+                                                stroke="#101136"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M15.2832 17.1667C15.8832 17.0417 16.4499 16.8 16.9165 16.4417C18.2165 15.4667 18.2165 13.8583 16.9165 12.8833C16.4582 12.5333 15.8999 12.3 15.3082 12.1667"
+                                                stroke="#101136"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        Audiences
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="im-audiences-right-head">
+                                <div class="im-audiences-right-head-search">
+                                    <label for="imsearch">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                            <path
+                                                d="M6.14285 11.7006C8.98317 11.7006 11.2857 9.44378 11.2857 6.65991C11.2857 3.87604 8.98317 1.61926 6.14285 1.61926C3.30253 1.61926 1 3.87604 1 6.65991C1 9.44378 3.30253 11.7006 6.14285 11.7006Z"
+                                                stroke="#575A7B"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path d="M13.0001 13.3808L10.4287 10.8604" stroke="#575A7B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                    <input type="search" placeholder="Search" id="imsearch" />
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                        <!-- audiences head -->
+
+                        <!-- audiences details list -->
+                        <div class="im-audiences-details-list">
+                            <div class="im-audiences-details-content">
+                                <!-- audiences heading  -->
+                                <div class="im-audiences-details-content-heading">
+                                    <div class="im-audiences-list-header-audiencename">
+                                        <p>Audience Name</p>
+                                    </div>
+                                    <div class="im-audiences-list-header-datecreated">
+                                        <p>Date Created</p>
+                                    </div>
+                                    <div class="im-audiences-list-header-adsize">
+                                        <p>Audience Size</p>
+                                    </div>
+                                    <div class="im-audiences-list-header-adactions">
+                                        <p>Actions</p>
+                                    </div>
+                                </div>
+                                <!-- audiences heading  -->
+
+                                <!-- audiences details list  -->
+                                <div class="im-audiences-details-content-list">
+
+                                    <!-- single details list  -->
+                                    <div class="im-single-audiences-details-content-list">
+                                        <div class="im-single-audiences-content adname">
+                                            <img src="assets/images/ad1.png" alt="Image">
+                                            <p>Accredited Investors</p>
+                                            <div class="im-single-audiences-investor-help-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                    <path
+                                                        d="M9 2.8125C7.77623 2.8125 6.57994 3.17539 5.56241 3.85528C4.54488 4.53517 3.75182 5.50153 3.2835 6.63215C2.81518 7.76276 2.69265 9.00686 2.93139 10.2071C3.17014 11.4074 3.75944 12.5099 4.62478 13.3752C5.49012 14.2406 6.59262 14.8299 7.79288 15.0686C8.99314 15.3074 10.2372 15.1848 11.3679 14.7165C12.4985 14.2482 13.4648 13.4551 14.1447 12.4376C14.8246 11.4201 15.1875 10.2238 15.1875 9C15.1875 7.35897 14.5356 5.78516 13.3752 4.62478C12.2148 3.4644 10.641 2.8125 9 2.8125Z"
+                                                        stroke="#575A7B"
+                                                        stroke-miterlimit="10"
+                                                    />
+                                                    <path
+                                                        d="M7.03125 7.11175C7.03125 7.11175 7.06078 6.49652 7.71926 5.96671C8.10984 5.65206 8.57812 5.56101 9 5.55468C9.38426 5.54976 9.72738 5.61339 9.9327 5.71112C10.2843 5.87847 10.9688 6.28698 10.9688 7.15569C10.9688 8.06976 10.3711 8.48495 9.69012 8.94163C9.00914 9.39831 8.82422 9.89402 8.82422 10.4062"
+                                                        stroke="#575A7B"
+                                                        stroke-miterlimit="10"
+                                                        stroke-linecap="round"
+                                                    />
+                                                    <path
+                                                        d="M8.78906 12.9375C9.17739 12.9375 9.49219 12.6227 9.49219 12.2344C9.49219 11.846 9.17739 11.5312 8.78906 11.5312C8.40074 11.5312 8.08594 11.846 8.08594 12.2344C8.08594 12.6227 8.40074 12.9375 8.78906 12.9375Z"
+                                                        fill="#575A7B"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="im-single-audiences-content addate">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                                <path d="M1.06055 5.81319H12.6461" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.73752 8.35127H9.74354" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.85276 8.35127H6.85878" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M3.96311 8.35127H3.96913" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.73752 10.8776H9.74354" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.85276 10.8776H6.85878" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M3.96311 10.8776H3.96913" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.47881 1V3.13901" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M4.22784 1V3.13901" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M9.60487 2.02647H4.10113C2.19228 2.02647 1 3.08983 1 5.04444V10.9267C1 12.9121 2.19228 14 4.10113 14H9.59885C11.5137 14 12.7 12.9305 12.7 10.9759V5.04444C12.706 3.08983 11.5197 2.02647 9.60487 2.02647Z"
+                                                    stroke="#101136"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            <p>Jan 14, 2023</p>
+                                        </div>
+                                       
+                                        <div class="im-single-audiences-content adsize">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M6.10671 7.24666C6.04004 7.24 5.96004 7.24 5.88671 7.24666C4.30004 7.19333 3.04004 5.89333 3.04004 4.29333C3.04004 2.66 4.36004 1.33333 6.00004 1.33333C7.63337 1.33333 8.96004 2.66 8.96004 4.29333C8.95337 5.89333 7.69337 7.19333 6.10671 7.24666Z"
+                                                    stroke="#101136"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M10.9399 2.66667C12.2333 2.66667 13.2733 3.71334 13.2733 5.00001C13.2733 6.26001 12.2733 7.28667 11.0266 7.33334C10.9733 7.32667 10.9133 7.32667 10.8533 7.33334"
+                                                    stroke="#101136"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M2.77348 9.70667C1.16014 10.7867 1.16014 12.5467 2.77348 13.62C4.60681 14.8467 7.61348 14.8467 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70667C7.62014 8.48667 4.61348 8.48667 2.77348 9.70667Z"
+                                                    stroke="#101136"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M12.2266 13.3333C12.7066 13.2333 13.1599 13.04 13.5332 12.7533C14.5732 11.9733 14.5732 10.6867 13.5332 9.90666C13.1666 9.62666 12.7199 9.43999 12.2466 9.33333"
+                                                    stroke="#101136"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            <p>100,287</p>
+                                        </div>
+
+                                        <div class="im-single-audiences-content adaction">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                                    <circle cx="19" cy="19" r="18.5" fill="white" stroke="#E6EAED"/>
+                                                    <path d="M23.6667 20.4583C23.8988 20.4583 24.1213 20.5505 24.2854 20.7146C24.4495 20.8787 24.5417 21.1013 24.5417 21.3333V23.6667C24.5417 24.0534 24.3881 24.4244 24.1146 24.6979C23.8411 24.9714 23.4701 25.125 23.0834 25.125H14.9167C14.5299 25.125 14.159 24.9714 13.8855 24.6979C13.612 24.4244 13.4584 24.0534 13.4584 23.6667V21.3333C13.4584 21.1013 13.5506 20.8787 13.7147 20.7146C13.8787 20.5505 14.1013 20.4583 14.3334 20.4583C14.5654 20.4583 14.788 20.5505 14.9521 20.7146C15.1162 20.8787 15.2084 21.1013 15.2084 21.3333V23.375H22.7917V21.3333C22.7917 21.1013 22.8839 20.8787 23.048 20.7146C23.2121 20.5505 23.4346 20.4583 23.6667 20.4583ZM19.7216 13.82L22.0935 16.1924C22.177 16.2731 22.2437 16.3697 22.2895 16.4764C22.3354 16.5832 22.3595 16.698 22.3606 16.8142C22.3616 16.9304 22.3394 17.0456 22.2954 17.1531C22.2514 17.2607 22.1865 17.3584 22.1043 17.4405C22.0221 17.5227 21.9245 17.5876 21.8169 17.6316C21.7094 17.6756 21.5942 17.6978 21.478 17.6968C21.3618 17.6958 21.247 17.6716 21.1402 17.6258C21.0335 17.5799 20.9369 17.5132 20.8562 17.4297L19.875 16.4485V21.3333C19.875 21.5654 19.7829 21.788 19.6188 21.9521C19.4547 22.1162 19.2321 22.2083 19 22.2083C18.768 22.2083 18.5454 22.1162 18.3813 21.9521C18.2172 21.788 18.125 21.5654 18.125 21.3333V16.4485L17.1439 17.4297C17.0632 17.5132 16.9666 17.5799 16.8599 17.6258C16.7531 17.6716 16.6383 17.6958 16.5221 17.6968C16.4059 17.6978 16.2907 17.6756 16.1832 17.6316C16.0756 17.5876 15.9779 17.5227 15.8958 17.4405C15.8136 17.3584 15.7487 17.2607 15.7047 17.1531C15.6607 17.0456 15.6385 16.9304 15.6395 16.8142C15.6405 16.698 15.6647 16.5832 15.7105 16.4764C15.7564 16.3697 15.8231 16.2731 15.9066 16.1924L18.2785 13.8206C18.4699 13.6293 18.7294 13.5219 19 13.5219C19.2707 13.5219 19.5302 13.6293 19.7216 13.8206" fill="#575A7B"/>
+                                                  </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                                    <circle cx="19" cy="19" r="18.5" fill="white" stroke="#E6EAED"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3723 14.9458C24.6057 14.9458 24.8 15.1396 24.8 15.3862V15.6142C24.8 15.8548 24.6057 16.0546 24.3723 16.0546H14.4283C14.1943 16.0546 14 15.8548 14 15.6142V15.3862C14 15.1396 14.1943 14.9458 14.4283 14.9458H16.1777C16.5331 14.9458 16.8424 14.6932 16.9223 14.3368L17.0139 13.9276C17.1563 13.3702 17.6249 13 18.1612 13H20.6388C21.1693 13 21.6431 13.3702 21.7802 13.8982L21.8783 14.3362C21.9576 14.6932 22.2669 14.9458 22.6228 14.9458H24.3723ZM23.4838 23.2803C23.6664 21.5782 23.9862 17.5342 23.9862 17.4934C23.9978 17.3698 23.9576 17.2528 23.8776 17.1586C23.7919 17.0704 23.6833 17.0182 23.5637 17.0182H15.2414C15.1212 17.0182 15.0068 17.0704 14.9274 17.1586C14.8469 17.2528 14.8072 17.3698 14.8131 17.4934C14.8141 17.5009 14.8256 17.6434 14.8448 17.8815C14.93 18.9395 15.1674 21.886 15.3207 23.2803C15.4293 24.3075 16.1033 24.9531 17.0795 24.9765C17.8328 24.9939 18.6089 24.9999 19.4025 24.9999C20.15 24.9999 20.9092 24.9939 21.6859 24.9765C22.696 24.9591 23.3694 24.3249 23.4838 23.2803Z" fill="#575A7B"/>
+                                                  </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- single details list  -->
+
+                                    <!-- single details list  -->
+                                    <div class="im-single-audiences-details-content-list">
+                                        <div class="im-single-audiences-content adname">
+                                            <img src="assets/images/ad2.png" alt="Image">
+                                            <p>Accredited Investors</p>
+                                            <div class="im-single-audiences-investor-help-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                    <path
+                                                        d="M9 2.8125C7.77623 2.8125 6.57994 3.17539 5.56241 3.85528C4.54488 4.53517 3.75182 5.50153 3.2835 6.63215C2.81518 7.76276 2.69265 9.00686 2.93139 10.2071C3.17014 11.4074 3.75944 12.5099 4.62478 13.3752C5.49012 14.2406 6.59262 14.8299 7.79288 15.0686C8.99314 15.3074 10.2372 15.1848 11.3679 14.7165C12.4985 14.2482 13.4648 13.4551 14.1447 12.4376C14.8246 11.4201 15.1875 10.2238 15.1875 9C15.1875 7.35897 14.5356 5.78516 13.3752 4.62478C12.2148 3.4644 10.641 2.8125 9 2.8125Z"
+                                                        stroke="#575A7B"
+                                                        stroke-miterlimit="10"
+                                                    />
+                                                    <path
+                                                        d="M7.03125 7.11175C7.03125 7.11175 7.06078 6.49652 7.71926 5.96671C8.10984 5.65206 8.57812 5.56101 9 5.55468C9.38426 5.54976 9.72738 5.61339 9.9327 5.71112C10.2843 5.87847 10.9688 6.28698 10.9688 7.15569C10.9688 8.06976 10.3711 8.48495 9.69012 8.94163C9.00914 9.39831 8.82422 9.89402 8.82422 10.4062"
+                                                        stroke="#575A7B"
+                                                        stroke-miterlimit="10"
+                                                        stroke-linecap="round"
+                                                    />
+                                                    <path
+                                                        d="M8.78906 12.9375C9.17739 12.9375 9.49219 12.6227 9.49219 12.2344C9.49219 11.846 9.17739 11.5312 8.78906 11.5312C8.40074 11.5312 8.08594 11.846 8.08594 12.2344C8.08594 12.6227 8.40074 12.9375 8.78906 12.9375Z"
+                                                        fill="#575A7B"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="im-single-audiences-content addate">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                                <path d="M1.06055 5.81319H12.6461" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.73752 8.35127H9.74354" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.85276 8.35127H6.85878" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M3.96311 8.35127H3.96913" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.73752 10.8776H9.74354" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.85276 10.8776H6.85878" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M3.96311 10.8776H3.96913" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.47881 1V3.13901" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M4.22784 1V3.13901" stroke="#101136" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M9.60487 2.02647H4.10113C2.19228 2.02647 1 3.08983 1 5.04444V10.9267C1 12.9121 2.19228 14 4.10113 14H9.59885C11.5137 14 12.7 12.9305 12.7 10.9759V5.04444C12.706 3.08983 11.5197 2.02647 9.60487 2.02647Z"
+                                                    stroke="#101136"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            <p>Jan 14, 2023</p>
+                                        </div>
+                                       
+                                        <div class="im-single-audiences-content adsize">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M6.10671 7.24666C6.04004 7.24 5.96004 7.24 5.88671 7.24666C4.30004 7.19333 3.04004 5.89333 3.04004 4.29333C3.04004 2.66 4.36004 1.33333 6.00004 1.33333C7.63337 1.33333 8.96004 2.66 8.96004 4.29333C8.95337 5.89333 7.69337 7.19333 6.10671 7.24666Z"
+                                                    stroke="#101136"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M10.9399 2.66667C12.2333 2.66667 13.2733 3.71334 13.2733 5.00001C13.2733 6.26001 12.2733 7.28667 11.0266 7.33334C10.9733 7.32667 10.9133 7.32667 10.8533 7.33334"
+                                                    stroke="#101136"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M2.77348 9.70667C1.16014 10.7867 1.16014 12.5467 2.77348 13.62C4.60681 14.8467 7.61348 14.8467 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70667C7.62014 8.48667 4.61348 8.48667 2.77348 9.70667Z"
+                                                    stroke="#101136"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M12.2266 13.3333C12.7066 13.2333 13.1599 13.04 13.5332 12.7533C14.5732 11.9733 14.5732 10.6867 13.5332 9.90666C13.1666 9.62666 12.7199 9.43999 12.2466 9.33333"
+                                                    stroke="#101136"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            <p>100,287</p>
+                                        </div>
+
+                                        <div class="im-single-audiences-content adaction">
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                                    <circle cx="19" cy="19" r="18.5" fill="white" stroke="#E6EAED"/>
+                                                    <path d="M23.6667 20.4583C23.8988 20.4583 24.1213 20.5505 24.2854 20.7146C24.4495 20.8787 24.5417 21.1013 24.5417 21.3333V23.6667C24.5417 24.0534 24.3881 24.4244 24.1146 24.6979C23.8411 24.9714 23.4701 25.125 23.0834 25.125H14.9167C14.5299 25.125 14.159 24.9714 13.8855 24.6979C13.612 24.4244 13.4584 24.0534 13.4584 23.6667V21.3333C13.4584 21.1013 13.5506 20.8787 13.7147 20.7146C13.8787 20.5505 14.1013 20.4583 14.3334 20.4583C14.5654 20.4583 14.788 20.5505 14.9521 20.7146C15.1162 20.8787 15.2084 21.1013 15.2084 21.3333V23.375H22.7917V21.3333C22.7917 21.1013 22.8839 20.8787 23.048 20.7146C23.2121 20.5505 23.4346 20.4583 23.6667 20.4583ZM19.7216 13.82L22.0935 16.1924C22.177 16.2731 22.2437 16.3697 22.2895 16.4764C22.3354 16.5832 22.3595 16.698 22.3606 16.8142C22.3616 16.9304 22.3394 17.0456 22.2954 17.1531C22.2514 17.2607 22.1865 17.3584 22.1043 17.4405C22.0221 17.5227 21.9245 17.5876 21.8169 17.6316C21.7094 17.6756 21.5942 17.6978 21.478 17.6968C21.3618 17.6958 21.247 17.6716 21.1402 17.6258C21.0335 17.5799 20.9369 17.5132 20.8562 17.4297L19.875 16.4485V21.3333C19.875 21.5654 19.7829 21.788 19.6188 21.9521C19.4547 22.1162 19.2321 22.2083 19 22.2083C18.768 22.2083 18.5454 22.1162 18.3813 21.9521C18.2172 21.788 18.125 21.5654 18.125 21.3333V16.4485L17.1439 17.4297C17.0632 17.5132 16.9666 17.5799 16.8599 17.6258C16.7531 17.6716 16.6383 17.6958 16.5221 17.6968C16.4059 17.6978 16.2907 17.6756 16.1832 17.6316C16.0756 17.5876 15.9779 17.5227 15.8958 17.4405C15.8136 17.3584 15.7487 17.2607 15.7047 17.1531C15.6607 17.0456 15.6385 16.9304 15.6395 16.8142C15.6405 16.698 15.6647 16.5832 15.7105 16.4764C15.7564 16.3697 15.8231 16.2731 15.9066 16.1924L18.2785 13.8206C18.4699 13.6293 18.7294 13.5219 19 13.5219C19.2707 13.5219 19.5302 13.6293 19.7216 13.8206" fill="#575A7B"/>
+                                                  </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                                    <circle cx="19" cy="19" r="18.5" fill="white" stroke="#E6EAED"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3723 14.9458C24.6057 14.9458 24.8 15.1396 24.8 15.3862V15.6142C24.8 15.8548 24.6057 16.0546 24.3723 16.0546H14.4283C14.1943 16.0546 14 15.8548 14 15.6142V15.3862C14 15.1396 14.1943 14.9458 14.4283 14.9458H16.1777C16.5331 14.9458 16.8424 14.6932 16.9223 14.3368L17.0139 13.9276C17.1563 13.3702 17.6249 13 18.1612 13H20.6388C21.1693 13 21.6431 13.3702 21.7802 13.8982L21.8783 14.3362C21.9576 14.6932 22.2669 14.9458 22.6228 14.9458H24.3723ZM23.4838 23.2803C23.6664 21.5782 23.9862 17.5342 23.9862 17.4934C23.9978 17.3698 23.9576 17.2528 23.8776 17.1586C23.7919 17.0704 23.6833 17.0182 23.5637 17.0182H15.2414C15.1212 17.0182 15.0068 17.0704 14.9274 17.1586C14.8469 17.2528 14.8072 17.3698 14.8131 17.4934C14.8141 17.5009 14.8256 17.6434 14.8448 17.8815C14.93 18.9395 15.1674 21.886 15.3207 23.2803C15.4293 24.3075 16.1033 24.9531 17.0795 24.9765C17.8328 24.9939 18.6089 24.9999 19.4025 24.9999C20.15 24.9999 20.9092 24.9939 21.6859 24.9765C22.696 24.9591 23.3694 24.3249 23.4838 23.2803Z" fill="#575A7B"/>
+                                                  </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- single details list  -->
+
+                                   
+                                </div>
+                                <!-- audiences details list  -->
+                            </div>
+                        </div>
+                        <!-- audiences details list -->
+
+                        <!-- audiences pagination -->
+                        <div class="im-audiences-pagination">
+                            <div class="im-audiences-pagination-left-content">
+                                <p>Showing results 8 of 200</p>
+                            </div>
+                            <div class="im-pagination-right-content">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                <circle cx="16" cy="16" r="15.5" fill="white" stroke="#E6EAED" />
+                                                <path d="M19 10L12.5 16.5L19 23" stroke="#101136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li><a class="active" href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">19</a></li>
+                                    <li><a href="#">20</a></li>
+
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                <circle cx="16" cy="16" r="15.5" transform="matrix(-1 0 0 1 32 0)" fill="white" stroke="#E6EAED" />
+                                                <path d="M13 10L19.5 16.5L13 23" stroke="#101136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- audiences pagination -->
+                    </div>
+                </div>
+                <!-- audiences area  -->
+            </div>
+            <!-- End IM Main Area  -->
+        </main>
+
+        <!-- jS file -->
+        <script src="assets/js/modernizr-3.11.2.min.js"></script>
+        <script src="assets/js/jquery-1.3.2.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>
