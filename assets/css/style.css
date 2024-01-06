@@ -72,19 +72,26 @@ select {
   text-indent: 1px;
   text-overflow: '';
 }
-
+main.full-wrapper-area {
+  display: flex;
+  flex-direction: row;
+}
 
 /* Start IM Sidebar Area Css  */
 .im-sidebar-area {
   background-color: #FFFFFF;
-  position: absolute;
-  width: 260px;
-  height: 100%;
+  /* position: absolute; */
+  /* width: 260px; */
+  /* height: 100%; */
   border-right: 1px dashed #E6EAED;
   padding: 0 0 180px;
   top: 0;
   left: 0;
   z-index: 9;
+  flex: 0 0 14%;
+  width: 260px;
+  position: relative;
+  /* height: 100vh; */
 }
 .im-logo-content {
   padding: 40px 15px;
@@ -135,6 +142,7 @@ select {
   position: absolute;
   bottom: 0;
   z-index: 9;
+  width: 100%;
 }
 .im-profile-content {
   display: flex;
@@ -182,7 +190,8 @@ select {
 
 .im-main-area {
   background-color: #FFFFFF;
-  margin-left: 260px;
+  flex: 0 0 86%;
+  width: 100%;
 }
 
 /* header css */
@@ -373,7 +382,7 @@ header.im-header-area {
   flex: 0 0 30%
 }
 .im-single-audiences-details-content-list {
-  /* background-color: #FFFFFF; */
+  background-color: #FFFFFF;
   padding: 20px 30px;
   border-bottom: 1px solid #E6EAED;
 }
@@ -454,5 +463,41 @@ header.im-header-area {
   left: 10px;
   top: 10px;
 }
+.im-audiences-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.im-pagination-right-content ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.im-pagination-right-content ul li a {
+  font-weight: 500;
+  font-size: 15px;
+  color: #575A7B;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: .3s;
+}
+.im-pagination-right-content ul li a:hover,.im-pagination-right-content ul li a.active {
+  background-color: #E6EAED;
+  color: #101136;
+}
+.im-pagination-right-content ul li:first-child a {
+  margin-right: 10px;
+}
+.im-pagination-right-content ul li:last-child a {
+  margin-left: 10px;
+}
+
 
 /* End IM Main Area Css  */
