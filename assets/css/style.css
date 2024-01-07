@@ -325,6 +325,9 @@ header.im-header-area {
   border-radius: 10px;
   margin-right: 15px;
 }
+.admin-dashboard .im-audiences-right-head-search input {
+  margin-right: 0;
+}
 .im-audiences-right-head-search {
   position: relative;
 }
@@ -416,13 +419,17 @@ header.im-header-area {
 .im-single-audiences-content.delete {
   flex: 0 0 10%;
 }
-.im-single-audiences-content p {
+.im-single-audiences-content p,.im-single-audiences-content a {
   font-weight: 500;
   font-size: 15px;
   color: #101136;
   text-transform: inherit;
   line-height: normal;
   margin: 0 8px;
+  transition: .1s;
+}
+.im-single-audiences-content a:hover {
+  color: #0078B8;
 }
 .im-single-audiences-content svg {
   cursor: pointer;
@@ -534,6 +541,39 @@ header.im-header-area {
   margin-right: 10px;
 }
 /* End Admin Dashboard Page Css */
+
+/* Start Investor Database Page Css */
+.im-header-right-select-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.im-header-right-select-dropdown  .im-audiences-right-head-dropdown-select select {
+  padding: 10px 30px 10px 35px;
+  margin-left: 20px;
+}
+.im-header-right-select-dropdown  .im-audiences-right-head-dropdown-select svg.left-icon {
+  width: 18px;
+  height: auto;
+  left: 30px;
+  top: 13px;
+}
+.investor-database-list .im-audiences-details-content-heading {
+  padding: 15px 25px;
+  border-radius: 10px 10px 0 0;
+}
+.investor-database-list .im-single-audiences-details-content-list {
+  padding: 18px 20px;
+}
+.im-audiences-list-header-in,.im-audiences-list-header-it,.im-audiences-list-header-ind,.im-audiences-list-header-loc,.im-audiences-list-header-web,.im-audiences-list-header-pho,
+.im-single-audiences-content.im_in,.im-single-audiences-content.im_it,.im-single-audiences-content.im_ind,.im-single-audiences-content.im_loc,.im-single-audiences-content.im_web,.im-single-audiences-content.im_pho {
+  flex: 0 0 12%;
+}
+.im-audiences-list-header-ema,.im-audiences-list-header-pla,.im-single-audiences-content.im_ema,.im-single-audiences-content.im_pla {
+  flex: 0 0 14%;
+}
+
+/* End Investor Database Page Css */
 
 /* Start Integration Page Css */
 .im-feedback-integration {
@@ -729,6 +769,19 @@ header.im-header-area {
 } 
 .im-single-audiences-btn-content button svg {
   margin-right: 10px;
+}
+.im-single-audiences-platform-links {
+  display: flex;
+  align-items: center;
+}
+.im-single-audiences-platform-links a {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 8px 0 0;
+  line-height: 28px;
 }
 
 /* End Audience Page Css */
