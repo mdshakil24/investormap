@@ -68,6 +68,7 @@ p {
 }
 .more-bg-color a {
   background-color: rgba(0, 0, 0, 0.10);
+  border: none;
 }
 select {
   -webkit-appearance: none;
@@ -624,6 +625,110 @@ header.im-header-area {
   right: 15px;
   pointer-events: none;
 }
-
-
 /* End Integration Page Css */
+
+/* Start Audience Page Css */
+
+.im-select-audiences-area {
+  padding: 25px 30px;
+}
+.im-audience-back-btn a {
+  font-size: 19px;
+  font-weight: 600;
+}
+.im-audience-back-btn a svg {
+  border: 1px solid #E6EAED;
+  border-radius: 5px;
+  padding: 5px 5px;
+  margin-right: 10px;
+  width: 26px;
+}
+.im-select-audiences-items-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-im-select-audiences-item {
+  flex: 0 0 23.5%;
+  margin: 0 .75%;
+}
+.single-im-select-audiences-item.active {
+  border: 1.5px solid rgb(0, 0, 0);
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+.im-select-audiences-items-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.single-im-select-audiences-item h3 {
+  font-weight: 500;
+  font-size: 17px;
+  color: #101136;
+  text-transform: capitalize;
+}
+.im-single-audiences-text-content {
+  padding: 12px 15px;
+}
+.single-im-select-audiences-image img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: auto;
+  object-fit: cover;
+}
+.single-im-select-audiences-item {
+  flex: 0 0 23.5%;
+  margin: 0 .75%;
+  border-radius: 10px;
+  border: 1px solid #E6EAED;
+}
+/* .im-select-audiences-items-content .single-im-select-audiences-item:first-child {
+  margin-left: 0;
+}
+.im-select-audiences-items-content .single-im-select-audiences-item:last-child {
+  margin-right: 0;
+} */
+.im-single-audiences-text-content a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #101136;
+  text-transform: inherit;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #E6EAED;
+  padding: 5px 12px;
+  border-radius: 5px;
+  width: auto;
+  margin: 12px 0;
+}
+
+.im-single-audiences-text-content a svg {
+  margin-right: 8px;
+}
+
+.im-single-audiences-btn-content button {
+  font-weight: 500;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
+  background: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-top: 1.5px solid #000000;
+  border-radius: 0 0 10px 10px;
+}
+.single-im-select-audiences-item.active .im-single-audiences-btn-content button {
+  background-color: #FFFFFF;
+  color: #000000;
+} 
+.im-single-audiences-btn-content button svg {
+  margin-right: 10px;
+}
+
+/* End Audience Page Css */
