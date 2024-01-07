@@ -783,5 +783,124 @@ header.im-header-area {
   margin: 0 8px 0 0;
   line-height: 28px;
 }
-
 /* End Audience Page Css */
+
+/* Modal Css */
+
+.modal-header-title {
+  display: flex;
+  align-items: center;
+}
+.modal-header-title h5 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #101136;
+  text-transform: inherit;
+  margin-left: 10px;
+}
+button.btn-close:focus {
+  box-shadow: none;
+}
+.audiences-modal-content {
+  padding: 15px 15px 25px;
+}
+.audiences-modal-content h5 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #575A7B;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.similar-modal-sub-title p {
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #101136;
+}
+.similar-modal-sub-title p svg {
+  margin-right: 10px;
+}
+.audiences-modal-content .modal-platform-link.similar-btn a {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+.audiences-modal-content .im-ad-accounts-button-content {
+  justify-content: space-between;
+}
+.audiences-modal-content  .similar-btn.black-bg-color,.audiences-modal-content .similar-btn.more-bg-color {
+  flex: 0 0 48%;
+}
+.audiences-modal-content .similar-btn.black-bg-color a, .audiences-modal-content .similar-btn.more-bg-color a {
+  margin-right: 0;
+  text-align: center;
+  display: block;
+  padding: 14px 30px;
+}
+
+.audiences-modal-content .im-header-right-content {
+  margin-bottom: 30px;
+}
+.audiences-modal-content .im-ad-accounts-select-dropdown select {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.audiences-modal-content .im-ad-accounts-select-dropdown svg.facebook {
+  top: 18px;
+}
+.audiences-modal-content .im-ad-accounts-select-dropdown svg.downarrow {
+  top: 24px;
+}
+.single-build-audience-modal-items {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.single-build-audience-modal-items label {
+  font-weight: 400;
+  font-size: 12px;
+  color: #575A7B;
+  text-transform: capitalize;
+  line-height: normal;
+  margin-bottom: 8px;
+  display: block;
+  
+}
+.single-build-audience-modal-items input[type='file'] {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px dashed #000000;
+  padding: 35px 35px;
+  cursor: pointer;
+}
+.single-build-audience-modal-items input,.single-build-audience-modal-items textarea {
+  font-weight: 400;
+  font-size: 14px;
+  color: #575A7B;
+  text-transform: capitalize;
+  line-height: normal;
+  width: 100%;
+  resize: none;
+  border: 1px solid rgba(145, 158, 171, 0.32);
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+.custom-input-image::-webkit-file-upload-button,.custom-input-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-input-image::before,.custom-input-file::before {
+  content: 'Upload Image';
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+  background: #000000;
+  padding: 5px 10px;
+  border-radius: 25px;
+  margin: 0 156px;
+}
+.custom-input-file::before {
+  content: 'Upload File';
+  margin-right: 200px;
+}
