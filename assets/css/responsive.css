@@ -1,0 +1,191 @@
+@media all and (max-width: 1689px) {
+
+
+    .im-audiences-list-header-ind, .im-audiences-list-header-loc, .im-single-audiences-content.im_ind, .im-single-audiences-content.im_loc {
+        flex: 0 0 9%;
+    }
+    .im-audiences-list-header-ema, .im-audiences-list-header-pla, .im-single-audiences-content.im_ema, .im-single-audiences-content.im_pla {
+        flex: 0 0 16.5%;
+    }
+
+
+    .im-audiences-list-header-audience,.im-single-audiences-content.investor {
+        flex: 0 0 25%;
+    }
+    .im-single-audiences-content.group,.im-audiences-list-header-adaccount {
+        flex: 0 0 27%;
+    }
+    .im-audiences-list-header-audiencesize {
+        flex: 0 0 28%;
+    }
+    .im-single-audiences-content.size {
+        flex: 0 0 16%;
+    }
+    .im-audiences-list-header-adsize, .im-single-audiences-content.adsize {
+        flex: 0 0 25%;
+    }
+    .im-audiences-list-header-adactions, .im-single-audiences-content.adaction {
+        flex: 0 0 15%;
+    }
+    
+
+
+}
+
+@media all and (max-width: 1399px) {
+    .im-audiences-details-list {
+        overflow: scroll;
+    }
+    .im-audiences-details-content {
+        width: 1140px;
+    }
+    .im-alert-btn button {
+        width: 140px;
+        margin-left: 5px;
+    }
+
+
+}
+
+@media all and (max-width: 1199px) {
+    .im-header-right-content {
+        position: relative;
+        padding-right: 45px;
+    }
+    .im-header-content {
+        position: relative;
+    }
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        z-index: 9;
+        right: 0;
+        top: 7px;
+        border: 1.5px solid #101136;
+        padding: 5px 5px 2px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+        background-color: #FFFFFF;
+    }
+    .similar-btn a {
+        padding: 10px 13px;
+    }
+
+    .im-sidebar-area {
+        transform: translateX(-100%);
+        transition: .3s;
+    }
+    .im-sidebar-area.show {
+        transform: translateX(0);
+    }
+    .im-main-area {
+        width: 100%;
+        margin-left: 0;
+    }
+    /* 
+    .im-main-area::after {
+        content: "";
+        background: rgba(0,0,0,.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    } */
+    .single-im-select-audiences-item {
+        flex: 0 0 31%;
+        margin: 1.1%;
+        margin-bottom: 20px;
+    }
+    
+    
+  
+}
+
+@media all and (max-width: 991px) {
+
+    header.im-header-area {
+        padding: 20px 15px;
+    }
+    .im-alert-area {
+        padding: 0 15px;
+    }
+    .im-audiences-area {
+        padding: 20px 15px;
+    }
+    .im-header-left-page-link a {
+        font-size: 18px;
+    }
+    .im-feedback-integration {
+        padding: 80px 0;
+    }
+    .im-select-audiences-area {
+        padding: 25px 15px;
+    }
+    .single-im-select-audiences-item {
+        flex: 0 0 47%;
+        margin: 1.5%;
+        margin-bottom: 20px;
+    }
+    .im-select-audiences-items-content {
+        margin-top: 10px;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+    .mobile-menu-icon {
+        right: 0;
+        top: 0;
+    }
+    .im-header-content {
+        flex-direction: column;
+    }
+    .im-header-right-content {
+        padding-right: 0;
+    }
+    .im-header-right-select-dropdown  .im-audiences-right-head-dropdown-select select,.similar-btn a {
+        margin: 0 8px;
+        margin-top: 15px;
+    }
+    .im-header-right-select-dropdown  .im-audiences-right-head-dropdown-select svg.left-icon {
+        width: 17px;
+        left: 18px;
+        top: 13px;
+    }
+    .im-audiences-right-head-dropdown-select svg.right-icon {
+        right: 20px;
+    }
+   
+
+}
+
+
+@media all and (max-width: 575px) {
+    .im-header-right-select-dropdown,.im-header-right-btn-link {
+        flex-wrap: wrap;
+    }
+    .im-header-right-select-dropdown  .im-audiences-right-head-dropdown-select svg.left-icon {
+        width: 17px;
+        left: 18px;
+        top: 28px;
+    }
+    .im-audiences-pagination {
+        flex-direction: column;
+    }
+    .im-audiences-pagination-left-content {
+        margin-bottom: 15px;
+    }
+
+
+}
+
+
+
+@media all and (max-width: 450px) {
+    
+
+
+
+}
+
