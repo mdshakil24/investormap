@@ -12,11 +12,6 @@ $(document).ready(function(){
       
 })
 
-let fullBody = document.body;
-function bodyClass() {
-    fullBody.classList.toggle('overlay');
-}
-
 
 
 
